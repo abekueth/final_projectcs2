@@ -85,7 +85,7 @@ class Logic(QWidget, Ui_Form):
         used_ids = self.unique_id()
         if id_text in used_ids:
             self.label_check.setText('This ID is already in use')
-            self.id_input.clear()
+            self.id_input.clear()  #keep radio incase user used wrong id but still want to still vote the selected one
             return
 
         self.label_check.setText('')
