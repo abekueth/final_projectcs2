@@ -14,7 +14,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(351, 429)
         self.label_title = QtWidgets.QLabel(parent=Form)
-        self.label_title.setGeometry(QtCore.QRect(150, 30, 55, 16))
+        self.label_title.setGeometry(QtCore.QRect(150, 30, 70, 16))
         self.label_title.setObjectName("label_title")
         self.groupBox = QtWidgets.QGroupBox(parent=Form)
         self.groupBox.setGeometry(QtCore.QRect(110, 110, 120, 80))
