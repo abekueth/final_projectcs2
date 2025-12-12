@@ -104,5 +104,7 @@ class Logic(QWidget, Ui_Form):
                 writer = csv.writer(csvfile)
                 writer.writerow(new_row)
             self.update_vote_counts()
+            self.id_input.clear()
+            self.label_check.setText('Accepted')
 
         self.clear_func_and_radio()
