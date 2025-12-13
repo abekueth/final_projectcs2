@@ -14,7 +14,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(351, 429)
         self.label_title = QtWidgets.QLabel(parent=Form)
-        self.label_title.setGeometry(QtCore.QRect(150, 30, 70, 16))
+        self.label_title.setGeometry(QtCore.QRect(150, 30, 71, 16))
         self.label_title.setObjectName("label_title")
         self.groupBox = QtWidgets.QGroupBox(parent=Form)
         self.groupBox.setGeometry(QtCore.QRect(110, 110, 120, 80))
@@ -44,6 +44,12 @@ class Ui_Form(object):
         self.label_janecount = QtWidgets.QLabel(parent=Form)
         self.label_janecount.setGeometry(QtCore.QRect(200, 330, 91, 41))
         self.label_janecount.setObjectName("label_janecount")
+        self.clear_button = QtWidgets.QPushButton(parent=Form)
+        self.clear_button.setGeometry(QtCore.QRect(250, 60, 81, 31))
+        self.clear_button.setObjectName("clear_button")
+        self.reset_button = QtWidgets.QPushButton(parent=Form)
+        self.reset_button.setGeometry(QtCore.QRect(120, 380, 101, 41))
+        self.reset_button.setObjectName("reset_button")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -57,8 +63,10 @@ class Ui_Form(object):
         self.radioButtonJohn.setText(_translate("Form", "John"))
         self.submit_button.setText(_translate("Form", "Submit"))
         self.label_input.setText(_translate("Form", "Input ID:"))
-        self.label_johncount.setText(_translate("Form", "John Count:"))
-        self.label_janecount.setText(_translate("Form", "Jane Count:"))
+        self.label_johncount.setText(_translate("Form", "John Count:0"))
+        self.label_janecount.setText(_translate("Form", "Jane Count:0"))
+        self.clear_button.setText(_translate("Form", "Clear Inputs"))
+        self.reset_button.setText(_translate("Form", "Reset Data"))
 
 
 if __name__ == "__main__":
